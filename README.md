@@ -21,5 +21,14 @@ Set-Cookie: n=v; HttpOnly  //cannot be read
 ```
 ######15 Weakness in Cookie LifeCycle - Demo
 burp suite->choose raw request right click(repeater)
-######16
-if seeesion id is not invalidated by server when log out, we can use this id to simulate a login
+######17
+if seeesion id is not invalidated by server when log out, we can use this id to simulate a login (impersonate)
+######20 XSS via cookie
+XSS via cookie!=local exploitation
+######22 XSS via cookie.
+in a.ex.com, 
+```
+<script>
+document.cookie = 'language=\x3cscript\x3ealert("test")\x3c/script\x3e;domain=.ex.com'
+</script>
+```
