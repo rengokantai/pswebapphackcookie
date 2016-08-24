@@ -19,3 +19,5 @@ cookie manager(ff extension): Edit cookie->send for (encrypted connections only)
 Set-Cookie: n=v;   //XSS can be read
 Set-Cookie: n=v; HttpOnly  //cannot be read
 ```
+######15 Weakness in Cookie LifeCycle - Demo
+burp suite->choose raw request right click(repeater)
