@@ -21,3 +21,5 @@ Set-Cookie: n=v; HttpOnly  //cannot be read
 ```
 ######15 Weakness in Cookie LifeCycle - Demo
 burp suite->choose raw request right click(repeater)
+######16
+if seeesion id is not invalidated by server when log out, we can use this id to simulate a login
